@@ -17,6 +17,7 @@ body {
 .navbar {
   background: #2c3e50;
   padding: 10px 0;
+  
 }
 .navbar ul {
   list-style: none;
@@ -126,14 +127,17 @@ body {
   .texto-apresentacao { margin-left: 20px; }
   .texto-apresentacao h1 { font-size: 28px; }
   .texto-apresentacao p { font-size: 18px; }
+  .navbar ul{  flex-direction: row; align-items: center;}
+  
 }
 
 @media (min-width: 1024px) {
   .container { width: 80%; margin: 0 auto; }
+  .navbar ul {flex-direction: row; align-items: center;}
 }
 
 @media (max-width: 600px) {
-  .navbar ul { flex-direction: column; align-items: center; }
+  .navbar ul { flex-direction: row; align-items: center; }
   .texto-apresentacao h1 { font-size: 22px; }
   .texto-apresentacao p { font-size: 14px; }
   .profile-pic { width: 120px; height: 120px; }
