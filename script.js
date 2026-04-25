@@ -16,6 +16,14 @@ const myChart = new Chart(ctx, {
   options: {
     responsive: true,
     scales: {
+       x: {
+      ticks: {
+        color: "white", 
+        font: {
+          weight: "bold"
+        }
+      }
+    },
       y: {
         beginAtZero: true,
         ticks: {
@@ -26,12 +34,18 @@ const myChart = new Chart(ctx, {
             if (value === 3) return "Avançado";
             return value;
           },
+          color:"white",
+          font: {
+            weight:"bold" ,
+
+          }
+          
         },
       },
     },
     plugins: {
       legend: {
-        display: false, // remove legenda duplicada
+        display: false, 
       },
       tooltip: {
         callbacks: {
@@ -43,6 +57,10 @@ const myChart = new Chart(ctx, {
             if (value === 3) nivel = "Avançado";
             return context.label + ": " + nivel;
           },
+          color:"white",
+          font: {
+            weight:"bold",
+          }
         },
       },
     },

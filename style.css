@@ -119,6 +119,15 @@ body {
   margin: 0 auto;
   padding-top: 20px;
 }
+.title-graphic{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
 
 /* Responsividade */
 @media (min-width: 768px) {
